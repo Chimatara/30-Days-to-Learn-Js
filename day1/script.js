@@ -150,3 +150,24 @@ console.log(statement.indexOf('because'))
 console.log(statement.lastIndexOf('because'))
 console.log(statement.substring(31, 54))
 
+
+// Exercise Level 3
+
+// 1. 'Love is the best thing in this world. Some found their love and some are still looking for their love.' Count the number of word love in this sentence
+let newSentence = 'Love is the best thing in this world. Some found their love and some are still looking for their love.';
+let regEx = /love/gi
+let loveCount = newSentence.match(regEx)
+console.log(` The number of times the word \'love\' appeared is ${loveCount.length} times`)
+
+// 2. Use match() to count the number of all because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+// the statement has already been declared above.
+let checkCount = /because/gi;
+let becauseCount = statement.match(checkCount)
+console.log(` The number of times the word \'because\' appeared is ${becauseCount.length} times`)
+
+
+// 3. Clean the following text and find the most frequent word (hint, use replace and regular expressions).
+//     const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+ const regexSentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+ let cleanStatement = regexSentence.replace(/[^\w\s]/g, '')
+ console.log(cleanStatement)
