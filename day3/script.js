@@ -60,6 +60,10 @@ let canDance = '';
 // 4 === '4' false
 // Find the length of python and jargon and make a falsy comparison statement.
 
+let pythonLength = 50;
+let jargonLength;
+console.log(pythonLength == jargonLength) 
+
 console.log(4 > 3)
 console.log(4 >= 3)
 console.log(4 < 3)
@@ -71,4 +75,47 @@ console.log(4 !== 4)
 console.log(4 != '4')
 console.log(4 == '4')
 console.log(4 === '4')
-// Find the length of python and jargon and make a falsy comparison statement.
+
+console.log('----------------------------------')
+// 6. Figure out the result of the following expressions first without using console.log(). After you decide the result confirm it by using console.log()
+// 4 > 3 && 10 < 12  true
+// 4 > 3 && 10 > 12   false
+// 4 > 3 || 10 < 12   true
+// 4 > 3 || 10 > 12   true
+// !(4 > 3)   false
+// !(4 < 3)    true
+// !(false)    false
+// !(4 > 3 && 10 < 12) false 
+// !(4 > 3 && 10 > 12)  false
+// !(4 === '4')  true
+// There is no 'on' in both dragon and python false
+
+console.log(4 > 3 && 10 < 12)
+console.log(4 > 3 && 10 > 12)
+console.log(4 > 3 || 10 < 12 )
+console.log(4 > 3 || 10 > 12)
+console.log(!(4 > 3) )
+console.log(!(4 < 3))
+console.log(!(false))
+console.log(!(4 > 3 && 10 < 12))
+console.log(!(4 > 3 && 10 > 12))
+console.log(!(4 === '4'))
+
+console.log('----------------------------------')
+
+// 7. Use the Date object to do the following activities
+const date = new Date();
+// What is the year today?
+console.log(date.getFullYear())
+// What is the month today as a number?
+console.log(date.getMonth())
+// What is the date today?
+console.log(date.getDay())
+// What is the day today as a number?
+console.log(date.getDate())
+// What is the hours now?
+console.log(date.getHours());
+// What is the minutes now?
+console.log(date.getMinutes())
+// Find out the numbers of seconds elapsed from January 1, 1970 to now.
+console.log(date.getTime())
