@@ -119,3 +119,12 @@ console.log(date.getHours());
 console.log(date.getMinutes())
 // Find out the numbers of seconds elapsed from January 1, 1970 to now.
 console.log(date.getTime())
+
+
+// Level 2
+
+// 1. Write a script that prompt the user to enter base and height of the triangle and calculate an area of a triangle (area = 0.5 x b x h).
+let triangleBase = prompt('Enter the triangle base', 0)
+let height = prompt('Enter the triangle height', 0)
+
+console.log(0.5 * triangleBase * height)
