@@ -151,4 +151,29 @@ let rectanglePerimeter = 2 * (rectangleLength + rectangleWidth);
 console.log(rectangleArea, rectanglePerimeter)
 
 
-// 4. 
+// 4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
+let radius = prompt('Please enter circle radius', 0)
+let circleArea = Math.PI * radius ** 2;
+let circleCircumference = 2 * Math.PI * radius
+console.log('The area of circle is ', circleArea)
+console.log('The circumfernce of the circle is ', circleCircumference)
+
+
+
+// 5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
+
+// Slope (m) is the coefficient of x
+const slope = 2;
+
+// To find x-intercept, set y = 0 and solve for x
+// 0 = 2x - 2
+// x = 1
+const xIntercept = 1;
+
+// To find y-intercept, set x = 0 and solve for y
+// y = 2(0) - 2
+// y = -2
+const yIntercept = -2;
+console.log("Slope (m):", slope);
+console.log("X-Intercept:", xIntercept);
+console.log("Y-Intercept:", yIntercept);
