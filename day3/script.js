@@ -127,9 +127,9 @@ console.log(date.getTime())
 // Enter base: 20
 // Enter height: 10
 // The area of the triangle is 100
-let triangleBase = prompt('Enter the triangle base', 0)
-let height = prompt('Enter the triangle height', 0)
-console.log('Area of triangle is ' + 0.5 * triangleBase * height)
+// let triangleBase = prompt('Enter the triangle base', 0)
+// let height = prompt('Enter the triangle height', 0)
+// console.log('Area of triangle is ' + 0.5 * triangleBase * height)
 
 // 2. Write a script that prompt the user to enter side a, side b, and side c of the triangle and and calculate the perimeter of triangle (perimeter = a + b + c
 // Enter side a: 5
@@ -137,26 +137,26 @@ console.log('Area of triangle is ' + 0.5 * triangleBase * height)
 // Enter side c: 3
 // The perimeter of the triangle is 12
 
-let sideA = prompt('Enter Side A', 0)
-let sideB = prompt('Enter Side B', 0)
-let sideC= prompt('Enter Side C', 0)
-console.log('Theperimeter of a triangle is ' + sideA + sideB + sideC);
+// let sideA = prompt('Enter Side A', 0)
+// let sideB = prompt('Enter Side B', 0)
+// let sideC= prompt('Enter Side C', 0)
+// console.log('Theperimeter of a triangle is ' + sideA + sideB + sideC);
 
 
 // 3. Get length and width using prompt and calculate an area of rectangle (area = length x width and the perimeter of rectangle (perimeter = 2 x (length + width)
-let rectangleLength = prompt('Enter rectangle length ', 0);
-let rectangleWidth= prompt('Enter rectangle width', 0);
-let rectangleArea = rectangleLength * rectangleWidth;
-let rectanglePerimeter = 2 * (rectangleLength + rectangleWidth);
-console.log(rectangleArea, rectanglePerimeter)
+// let rectangleLength = prompt('Enter rectangle length ', 0);
+// let rectangleWidth= prompt('Enter rectangle width', 0);
+// let rectangleArea = rectangleLength * rectangleWidth;
+// let rectanglePerimeter = 2 * (rectangleLength + rectangleWidth);
+// console.log(rectangleArea, rectanglePerimeter)
 
 
 // 4. Get radius using prompt and calculate the area of a circle (area = pi x r x r) and circumference of a circle(c = 2 x pi x r) where pi = 3.14.
-let radius = prompt('Please enter circle radius', 0)
-let circleArea = Math.PI * radius ** 2;
-let circleCircumference = 2 * Math.PI * radius
-console.log('The area of circle is ', circleArea)
-console.log('The circumfernce of the circle is ', circleCircumference)
+// let radius = prompt('Please enter circle radius', 0)
+// let circleArea = Math.PI * radius ** 2;
+// let circleCircumference = 2 * Math.PI * radius
+// console.log('The area of circle is ', circleArea)
+// console.log('The circumfernce of the circle is ', circleCircumference)
 
 
 
@@ -219,17 +219,88 @@ for (const x of xValues) {
 
 
 // 9. Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
-let hours = prompt('Enter number of hours', 0)
-let ratePerHour = prompt('Enter rate per hour ', 0)
-console.log('Your weekly earnings are' + hours * ratePerHour)
+// let hours = prompt('Enter number of hours', 0)
+// let ratePerHour = prompt('Enter rate per hour ', 0)
+// console.log('Your weekly earnings are' + hours * ratePerHour)
 
 
 // 10. If the length of your name is greater than 7 say, your name is long else say your name is short.
 let nameLength = 7
-let nameResult = nameLength > 7 ? 'Your name is long' : 'Your name is short';
+let chiName = 'Chimatara'
+let nameResult = chiName.length > nameLength ? 'Your name is long' : 'Your name is short';
 console.log(nameResult)
 
 
 // 11. Compare your first name length and your family name length and you should get this output.
 let myFirstName = 'Chimatara'
 let myLastName = 'Kalu'
+
+if(myFirstName.length > myLastName.length){
+    console.log(`Your first name, ${myFirstName} is longer than your family name, ${myLastName}`)
+} else{
+    console.log(`Your first name, ${myFirstName} is shorter than your family name, ${myLastName}`)
+}
+
+// 12. Declare two variables myAge and yourAge and assign them initial values and myAge and yourAge.
+let myAge = 350;
+let yourAge = 100;
+if(myAge > yourAge){
+    console.log(`I am ${myAge - yourAge} years older than you `)
+} else{
+    console.log(`I am ${yourAge - myAge} years older than you `)
+
+}
+
+
+// 13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
+let currentYear = new Date().getFullYear()
+let birthYear = prompt('Enter birth year', 0)
+
+
+
+// 15. Create a human readable time format using the Date time object
+const currentDate = new Date();
+// i.YYYY-MM-DD HH:mm
+// ii. DD-MM-YYYY HH:mm
+// iii. DD/MM/YYYY HH:mm
+
+// Format: YYYY-MM-DD HH:mm
+const format1 = new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
+});
+
+const formatted1 = format1.format(currentDate);
+console.log("YYYY-MM-DD HH:mm:", formatted1);
+
+// Format: DD-MM-YYYY HH:mm
+const format2 = new Intl.DateTimeFormat('en-US', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false
+});
+
+const formatted2 = format2.format(currentDate);
+console.log("DD-MM-YYYY HH:mm:", formatted2);
+
+// Format: DD/MM/YYYY HH:mm
+const format3 = new Intl.DateTimeFormat('en-US', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    hour12: false,
+    // Customize the separator
+    separator: '/'
+});
+
+const formatted3 = format3.format(currentDate);
+console.log("DD/MM/YYYY HH:mm:", formatted3);
