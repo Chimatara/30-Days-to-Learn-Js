@@ -187,3 +187,49 @@ let y2 = 10
 
 let slope2 = (y2 - y1) / (x2 -x1)
 console.log('the slope between the points are ', slope2)
+
+
+// 7. Compare the slope of above two questions.
+// ANSWER
+// In both cases, the slopes are equal, which is consistent with the fact that in a linear equation of the form y=mx+b, the coefficient 
+// m represents the slope of the line. Therefore, it makes sense that the slope calculated using the formula for two points on the line matches the coefficient of 
+// x in the linear equation.
+
+// 8. Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0
+// Given quadratic equation: y = x^2 + 6x + 9
+
+function calculateY(x) {
+    // Calculate y for the given x
+    return x**2 + 6*x + 9;
+}
+
+// Test different x values
+const xValues = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5];
+
+// Calculate and print y values for each x
+for (const x of xValues) {
+    const y = calculateY(x);
+    console.log(`For x = ${x}, y = ${y}`);
+    
+    // Check if y is 0
+    if (y === 0) {
+        console.log(`y is 0 at x = ${x}`);
+    }
+}
+
+
+// 9. Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
+let hours = prompt('Enter number of hours', 0)
+let ratePerHour = prompt('Enter rate per hour ', 0)
+console.log('Your weekly earnings are' + hours * ratePerHour)
+
+
+// 10. If the length of your name is greater than 7 say, your name is long else say your name is short.
+let nameLength = 7
+let nameResult = nameLength > 7 ? 'Your name is long' : 'Your name is short';
+console.log(nameResult)
+
+
+// 11. Compare your first name length and your family name length and you should get this output.
+let myFirstName = 'Chimatara'
+let myLastName = 'Kalu'
