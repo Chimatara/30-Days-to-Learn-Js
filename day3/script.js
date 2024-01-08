@@ -177,3 +177,13 @@ const yIntercept = -2;
 console.log("Slope (m):", slope);
 console.log("X-Intercept:", xIntercept);
 console.log("Y-Intercept:", yIntercept);
+
+
+// 6. Slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
+let x1 = 2
+let x2 = 6
+let y1 = 2
+let y2 = 10
+
+let slope2 = (y2 - y1) / (x2 -x1)
+console.log('the slope between the points are ', slope2)
