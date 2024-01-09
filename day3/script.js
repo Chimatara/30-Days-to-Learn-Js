@@ -255,6 +255,17 @@ if(myAge > yourAge){
 // 13. Using prompt get the year the user was born and if the user is 18 or above allow the user to drive if not tell the user to wait a certain amount of years.
 let currentYear = new Date().getFullYear()
 let birthYear = prompt('Enter birth year', 0)
+const userBirthYear = parseInt(birthYear, 10);
+let userAge = currentYear - userBirthYear
+
+if(userAge >= 18){
+    console.log(`You are ${userAge}. You are old enough to drive`)
+}else{
+    console.log(`You are ${userAge}. You will be allowed to drive after 3 years.`)
+}
+
+
+// 14. Write a script that prompt the user to enter number of years. Calculate the number of seconds a person can live. Assume some one lives just hundred years
 
 
 
