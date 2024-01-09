@@ -20,7 +20,7 @@ if(myAge === yourAge){
 } else if(myAge > yourAge){
    console.log(`you are ${myAge - yourAge} older than me`) 
 }else if(yourAge > myAge){
-   console.log(`you are ${yourAge - myAge181} older than me`) 
+   console.log(`you are ${yourAge - myAge} older than me`) 
 }else{
     console.log('No proper number added')
 }
@@ -37,3 +37,14 @@ if(a > b){
 }
 // ternary operator.
 (a > b) ? console.log('a is greater than b') :  console.log('a is less than b')
+
+
+// 4. Even numbers are divisible by 2 and the remainder is zero. How do you check, if a number is even or not using JavaScript?
+let number = prompt('Enter a number');
+let checkEvennumber = parseInt(number, 10)
+if(checkEvennumber % 0){
+    console.log(`${checkEvennumber} is an even number`)
+} else{
+    console.log(`${checkEvennumber} is an odd number`)
+
+}
