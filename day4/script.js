@@ -58,17 +58,21 @@ if(checkEvennumber % 0){
 // 60-69, C
 // 50-59, D
 // 0-49, F
-let scoores;
-if(scoores >= 80){
+let scoores = prompt('Enter the student\'s score:')
+const score = parseInt(scoores);
+
+if(score >= 80){
     console.log('A')
-}else if(scoores >= 70 && scoores <= 79){
+}else if(score >= 70 && scoores < 80){
     console.log('B')
-}else if(scoores >= 60 && scoores <= 69){
+}else if(score >= 60 && scoores < 70){
     console.log('D')
-}else if(scoores >= 50 && scoores <= 59){
+}else if(score >= 50 && scoores < 60){
     console.log('E')
+} else if (score >= 0 && score < 50) {
+    console.log('Grade: F');
 }else{
-    console.log('F')
+    console.log('Invalid score. Please enter a score between 0 and 100.');
 
 }
 
