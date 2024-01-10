@@ -79,9 +79,16 @@ if(scoores >= 80){
 // March, April or May, the season is Spring
 // June, July or August, the season is Summer
 
-let date = new Date().getMonth()
+let userMonthInput = prompt('Enter a month').toLowerCase()
 
-let autumn = ['September', 'October', 'November']
-let winter = ['December', 'January', 'February']
-let spring = ['March', 'April', 'May']
-let summer = ['July', 'Auguest', 'June']
+if (userMonthInput === 'september' || userMonthInput === 'october' || userMonthInput === 'november') {
+    console.log('The season is Autumn');
+} else if (userMonthInput === 'december' || userMonthInput === 'january' || userMonthInput === 'february') {
+    console.log('The season is Winter');
+} else if (userMonthInput === 'march' || userMonthInput === 'april' || userMonthInput === 'may') {
+    console.log('The season is Spring');
+} else if (userMonthInput === 'june' || userMonthInput === 'july' || userMonthInput === 'august') {
+    console.log('The season is Summer');
+} else {
+    console.log('Invalid month');
+}
