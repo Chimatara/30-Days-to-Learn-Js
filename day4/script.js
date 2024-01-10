@@ -96,3 +96,20 @@ if (userMonthInput === 'september' || userMonthInput === 'october' || userMonthI
 } else {
     console.log('Invalid month');
 }
+
+
+
+// 3. Check if a day is weekend day or a working day. Your script will take day as an input
+
+const userDay = prompt('Enter a day:').toLowerCase();
+
+const weekDays = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday']
+const weekendDays = ['saturday', 'sunday'];
+
+if (weekendDays.includes(userDay)) {
+    console.log(`${userDay} is a weekend day.`);
+} else if (weekDays.includes(userDay)) {
+    console.log(`${userDay} is a working day.`);
+} else {
+    console.log('Invalid day. Please enter a valid day of the week.');
+}
