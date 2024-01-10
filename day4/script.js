@@ -113,3 +113,31 @@ if (weekendDays.includes(userDay)) {
 } else {
     console.log('Invalid day. Please enter a valid day of the week.');
 }
+
+
+// 4. Write a program which tells the number of days in a month.
+const userMonth = prompt('Enter a month:').toLowerCase();
+
+switch (userMonth) {
+    case 'january':
+    case 'march':
+    case 'may':
+    case 'july':
+    case 'august':
+    case 'october':
+    case 'december':
+        console.log(`${userMonth} has 31 days.`);
+        break;
+    case 'april':
+    case 'june':
+    case 'september':
+    case 'november':
+        console.log(`${userMonth} has 30 days.`);
+        break;
+    case 'february':
+        console.log(`${userMonth} has 28 or 29 days, depending on whether it's a leap year.`);
+        break;
+    default:
+        console.log('Invalid month. Please enter a valid month.');
+}
+
