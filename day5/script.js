@@ -62,13 +62,32 @@ if(itCompanies.includes('Facebook')){
     console.log('Company not found')
 }
 //14 Filter out companies which have more than one 'o' without the filter method
+// come back to this
 
 //15 Sort the array using sort() method
+let sortArray = itCompanies.sort()
+console.log(sortArray)
+
 //16 Reverse the array using reverse() method
+let reverseArray = itCompanies.reverse()
+console.log(itCompanies)
+
 //17 Slice out the first 3 companies from the array
+let sliceArray = itCompanies.slice(0, 3)
+
 //18 Slice out the last 3 companies from the array
+let sliceArray2 = itCompanies.slice(itCompanies.length - 3, 3)
+
 //19 Slice out the middle IT company or companies from the array
+
 //20 Remove the first IT company from the array
+ itCompanies.shift()
+console.log(itCompanies)
+
 //21 Remove the middle IT company or companies from the array
+
 //22 Remove the last IT company from the array
+itCompanies.pop()
+console.log(itCompanies)
+
 //23 Remove all IT companies
