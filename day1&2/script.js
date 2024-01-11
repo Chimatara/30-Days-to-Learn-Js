@@ -34,7 +34,8 @@ console.log(challenge.split(' '))
 console.log(challenge.split(''))
 
 // 11. 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
-// I don't understand what I'm asked to do here
+let itCompanies = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+itCompanies.split(' ')
 
 // 12. Change 30 Days Of JavaScript to 30 Days Of Python using replace() method
 console.log(challenge.replace('Javascript', 'Python'))
