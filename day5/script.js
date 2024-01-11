@@ -103,6 +103,36 @@ console.log(itCompanies)
 // 2. First remove all the punctuations and change the string to array and count the number of words in the array
 let text =
 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
-const words = text.split()
+const words = text.split(' ')
+// const regex = words.replace()
 console.log(words)
 console.log(words.length)
+
+// In the following shopping cart add, remove, edit items
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+// add 'Meat' in the beginning of your shopping cart if it has not been already added
+if(shoppingCart.includes('Meat')){
+    console.log('already exists')
+} else{
+    shoppingCart.shift('Meat')
+}
+// add Sugar at the end of you shopping cart if it has not been already added
+if(shoppingCart.includes('Sugar')){
+    console.log('already exists')
+} else{
+    shoppingCart.push('Sugar')
+}
+// remove 'Honey' if you are allergic to honey
+// shoppingCart.splice(2, 0)
+console.log(shoppingCart)
+
+// modify Tea to 'Green Tea'
+
+
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+const fullStack = [frontEnd, backEnd].join().split(' ')
+console.log(fullStack)
+
+
+// LEVEL 3
