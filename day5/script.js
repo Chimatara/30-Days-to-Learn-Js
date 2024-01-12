@@ -154,7 +154,14 @@ if(ages % 2 === 0){
 console.log(medianAge)
 
 // Find the average age(all items divided by number of items)
+let sumOfAges = 0
+for(let i = 0; i < ages.length; i++){
+    sumOfAges += ages[i]
+}
+let averageAge = sumOfAges /ages.length
 // Find the range of the ages(max minus min)
+let range = maxAge - minAge
+console.log(range)
 // Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the
 
 
