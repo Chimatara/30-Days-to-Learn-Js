@@ -18,3 +18,6 @@ if(countries.includes('Ethopia')){
 }else{
     countries.push('Ethopia')
 }
+
+
+export default countries;

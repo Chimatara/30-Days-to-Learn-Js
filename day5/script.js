@@ -1,4 +1,5 @@
-
+import countries from "./countries";
+import webTechs from "./webtech";
 
 // EXCERCISE: LEVEL 1
 // 1. Declare an empty array;
@@ -162,7 +163,20 @@ let averageAge = sumOfAges /ages.length
 // Find the range of the ages(max minus min)
 let range = maxAge - minAge
 console.log(range)
-// Compare the value of (min - average) and (max - average), use abs() method 1.Slice the first ten countries from the
+
+// Compare the value of (min - average) and (max - average), use abs() method 
+const absMinDifference = Math.abs(minAge - averageAge);
+const absMaxDifference = Math.abs(maxAge - averageAge);
+
+if (absMinDifference < absMaxDifference) {
+    console.log('The absolute difference is smaller.');
+} else if (absMinDifference > absMaxDifference) {
+    console.log('The absolute difference is smaller.');
+} else {
+    console.log('The absolute differences are equal.');
+}
+
+// 1.Slice the first ten countries from the
 
 
 // 2. Find the middle country(ies) in the countries array

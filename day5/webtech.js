@@ -16,3 +16,6 @@ if(webTechs.includes('Sass')){
     webTechs.push('Sass')
 }
 console.log(webTechs)
+
+
+export default webTechs;
