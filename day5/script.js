@@ -142,8 +142,16 @@ const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 ages.sort()
 const minAge = ages[0];
 const maxAge = ages[ages.length - 1];
-
 // Find the median age(one middle item or two middle items divided by two)
+let medianAge;
+if(ages % 2 === 0){
+    let middleOne = ages[ages.length / 2 -1]
+    let middleTwo = ages[ages.length / 2]
+     medianAge = (middleOne + middleTwo) / 2
+}else{
+  medianAge = ages[Math.floor(ages.length / 2)]
+}
+console.log(medianAge)
 
 // Find the average age(all items divided by number of items)
 // Find the range of the ages(max minus min)
