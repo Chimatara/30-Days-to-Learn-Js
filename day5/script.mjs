@@ -1,5 +1,5 @@
-import countries from "./countries";
-import webTechs from "./webtech";
+import countries from "./countries.mjs";
+import webTechs from "./webtech.mjs";
 
 // EXCERCISE: LEVEL 1
 // 1. Declare an empty array;
