@@ -177,8 +177,17 @@ if (absMinDifference < absMaxDifference) {
 }
 
 // 1.Slice the first ten countries from the
+let firstTenCountries = countries.slice(0, 10)
 
-
-// 2. Find the middle country(ies) in the countries array
+// 2. Find the middle country(ies) in the countries arrayC
+const middleCountryIndex = Math.floor(countries.length / 2)
+if (countries.length % 2 === 1) {
+    const middleCountry = countries[middleCountryIndex];
+    console.log(middleCountry);
+  } else {
+   
+    const middleCountries = [countries[middleCountryIndexIndex - 1], countries[middleIndex]];
+    console.log(middleCountries);
+  }
 
 //3. Divide the countries array into two equal arrays if it is even. If countries array is not even , one more country for the first half
