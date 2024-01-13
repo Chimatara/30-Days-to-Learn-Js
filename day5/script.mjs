@@ -39,27 +39,19 @@ let lastCompany = itCompanies[itCompanies.length - 1]
 console.log(firstCompany, middleCompany, lastCompany) 
 
 //10 Print out each company
-console.log(itCompanies.length)
-console.log(itCompanies[0])
-console.log(itCompanies[1])
-console.log(itCompanies[2])
-console.log(itCompanies[3])
-console.log(itCompanies[4])
-console.log(itCompanies[5])
-console.log(itCompanies[6])
+for(let i = 0; i < itCompanies.length; i++){
+    console.log(itCompanies[i])
+}
 
-//11 Change each company name to uppercase one by one and print them out\
-console.log(itCompanies[0].toUpperCase())
-console.log(itCompanies[1].toUpperCase())
-console.log(itCompanies[2].toUpperCase())
-console.log(itCompanies[3].toUpperCase())
-console.log(itCompanies[4].toUpperCase())
-console.log(itCompanies[5].toUpperCase())
-console.log(itCompanies[6].toUpperCase())
+//11 Change each company name to uppercase one by one and print them out
+for(let i = 0; i < itCompanies.length; i++){
+    console.log(itCompanies[i].toUpperCase())
+}
 
 //12 Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
+console.log(itCompanies.join(', ') + ` are big IT companies`)
 
-console.log(`${itCompanies} are big IT companies`)
+
 //13 Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 if(itCompanies.includes('Facebook')){
     console.log( 'Facebook')
