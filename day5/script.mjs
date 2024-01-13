@@ -13,13 +13,15 @@ console.log(fruits.length)
 
 //4. Get the first item, the middle item and the last item of the array
 let firstItem = fruits[0];
-let middleItem = fruits.length / 2 //come back to this
+let middleItem = fruits[Math.floor(fruits.length / 2 )]
 let lastItem = fruits[fruits.length - 1]
 console.log(firstItem, middleItem, lastItem) 
 
 
 //5. Declare an array called mixedDataTypes, put different data types in the array and find the length of the array. The array size should be greater than 5
 const mixedDataTypes = [{name: 'Tara', age: 25}, 'Plantain', 'playing', 7, true, [1, 2, 3, 4], '']
+let arrayLength = mixedDataTypes.length
+console.log(arrayLength)
 
 // 6. Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
 const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
@@ -32,7 +34,7 @@ console.log(itCompanies.length)
 
 // 9. Print the first company, middle and last company
 let firstCompany = itCompanies[0];
-let middleCompany = itCompanies[itCompanies.length / 2]
+let middleCompany = itCompanies[Math.floor(itCompanies.length / 2)]
 let lastCompany = itCompanies[itCompanies.length - 1]
 console.log(firstCompany, middleCompany, lastCompany) 
 
