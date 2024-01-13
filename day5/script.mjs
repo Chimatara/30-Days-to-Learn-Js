@@ -149,10 +149,25 @@ if(shoppingCart.includes('Sugar')){
     shoppingCart.push('Sugar')
 }
 // remove 'Honey' if you are allergic to honey
-// shoppingCart.splice(2, 0)
-console.log(shoppingCart)
+   const allergicToHoney = true; 
+if (allergicToHoney) {
+  const honeyIndex = shoppingCart.indexOf('Honey');
+
+  if (honeyIndex !== -1) {
+    shoppingCart.splice(honeyIndex, 1);
+    console.log('Removed Honey from the shopping cart:', shoppingCart);
+  } else {
+    console.log('Honey is not in the shopping cart.');
+  }
+} else {
+  console.log('Not allergic to honey. Shopping cart remains unchanged:', shoppingCart);
+}
+
 
 // modify Tea to 'Green Tea'
+const teaIndex = shoppingCart.indexOf('Tea');
+shoppingCart[teaIndex] = 'Green Tea'
+console.log(shoppingCart)
 
 
 const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
