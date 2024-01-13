@@ -95,7 +95,16 @@ console.log(sliceArray)
 let sliceArray2 = itCompanies.slice(-3)
 console.log(sliceArray2)
 
-//19 Slice out the middle IT company or companies from the array
+//19  Slice out the middle IT company or companies from the array
+const middleIndex = Math.floor(itCompanies.length / 2);
+
+if (itCompanies.length % 2 === 0) {
+  const middleCompanies = itCompanies.slice(middleIndex - 1, middleIndex + 1);
+  console.log(middleCompanies);
+} else {
+  const middleCompany = itCompanies.slice(middleIndex, middleIndex + 1);
+  console.log(middleCompany);
+}
 
 //20 Remove the first IT company from the array
  itCompanies.shift()
@@ -108,7 +117,8 @@ itCompanies.pop()
 console.log(itCompanies)
 
 //23 Remove all IT companies
-
+itCompanies.splice(0, itCompanies.length)
+console.log(itCompanies)
 
 
 // LEVEL 2
@@ -118,7 +128,8 @@ console.log(itCompanies)
 // 2. First remove all the punctuations and change the string to array and count the number of words in the array
 let text =
 'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
-const words = text.split(' ')
+const cleanedText = text.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, '')
+const words = cleanedText.split(' ')
 // const regex = words.replace()
 console.log(words)
 console.log(words.length)
@@ -192,6 +203,7 @@ if (absMinDifference < absMaxDifference) {
 
 // 1.Slice the first ten countries from the
 let firstTenCountries = countries.slice(0, 10)
+console.log(firstTenCountries)
 
 // 2. Find the middle country(ies) in the countries arrayC
 const middleCountryIndex = Math.floor(countries.length / 2)
@@ -200,7 +212,7 @@ if (countries.length % 2 === 1) {
     console.log(middleCountry);
   } else {
    
-    const middleCountries = [countries[middleCountryIndexIndex - 1], countries[middleIndex]];
+    const middleCountries = [countries[middleCountryIndex - 1], countries[middleIndex]];
     console.log(middleCountries);
   }
 
