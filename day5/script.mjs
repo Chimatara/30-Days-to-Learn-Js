@@ -59,7 +59,25 @@ if(itCompanies.includes('Facebook')){
     console.log('Company not found')
 }
 //14 Filter out companies which have more than one 'o' without the filter method
-// come back to this
+//const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
+
+// Function to filter out companies with more than one 'o'
+function filterCompaniesWithMoreThanOneO(companies) {
+    const result = [];
+  
+    companies.forEach(company => {
+      const oCount = company.toLowerCase().split('o').length - 1;
+  
+      if (oCount <= 1) {
+        result.push(company);
+      }
+    });
+  
+    return result;
+  }
+  const filteredCompanies = filterCompaniesWithMoreThanOneO(itCompanies);
+  console.log(filteredCompanies);
+  
 
 //15 Sort the array using sort() method
 let sortArray = itCompanies.sort()
@@ -71,9 +89,11 @@ console.log(itCompanies)
 
 //17 Slice out the first 3 companies from the array
 let sliceArray = itCompanies.slice(0, 3)
+console.log(sliceArray)
 
 //18 Slice out the last 3 companies from the array
-let sliceArray2 = itCompanies.slice(itCompanies.length - 3, 3)
+let sliceArray2 = itCompanies.slice(-3)
+console.log(sliceArray2)
 
 //19 Slice out the middle IT company or companies from the array
 
