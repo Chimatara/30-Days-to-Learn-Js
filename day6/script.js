@@ -32,3 +32,17 @@ do{
 //     console.log(i)
 //     i 
 // }
+
+
+// 3. Iterate 0 to n using for loop
+let n = 5
+for(let i = 0; i < n; i++){
+    console.log(i)
+}
+
+
+// 4. Write a loop that makes the following pattern using console.log():
+
+for(let i = 1; i < ; i++){
+    console.log(i)
+}
