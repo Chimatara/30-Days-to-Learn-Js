@@ -18,3 +18,17 @@ do{
     i++
     break
 }while (i <= 10)
+
+
+
+// 2. Iterate 10 to 0 using for loop, do the same using while and do while loop
+// /FOR LOOP
+// for(let i = 0; i < 10; i++){
+//     console.log(i)
+// }
+// WHILE LOOP
+// let j = 0
+// while(j <= 10){
+//     console.log(i)
+//     i 
+// }
