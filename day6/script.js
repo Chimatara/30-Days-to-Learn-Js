@@ -22,16 +22,23 @@ do{
 
 
 // 2. Iterate 10 to 0 using for loop, do the same using while and do while loop
-// /FOR LOOP
-// for(let i = 0; i < 10; i++){
-//     console.log(i)
-// }
+// FOR LOOP
+for(let i = 10; i >= 0; i--){
+    console.log(i)
+}
 // WHILE LOOP
-// let j = 0
-// while(j <= 10){
-//     console.log(i)
-//     i 
-// }
+let j = 10
+while(j >= 0){
+    console.log(i)
+    i 
+}
+// DO WHILE LOOP
+let k = 10
+do{
+    // console.log(index)
+    k++
+    break
+}while (k >= 0)
 
 
 // 3. Iterate 0 to n using for loop
@@ -42,7 +49,12 @@ for(let i = 0; i < n; i++){
 
 
 // 4. Write a loop that makes the following pattern using console.log():
+for (let i = 1; i <= 7; i++) {
+    let line = '';
 
-for(let i = 1; i < ; i++){
-    console.log(i)
+    for (let j = 1; j <= i; j++) {
+        line += '#';
+    }
+
+    console.log(line);
 }
