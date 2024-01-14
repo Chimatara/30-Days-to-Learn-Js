@@ -58,3 +58,9 @@ for (let i = 1; i <= 7; i++) {
 
     console.log(line);
 }
+
+
+// 5. Use for loop to iterate from 0 to 100 and print only even numbers
+for(let i = 0; i <= 100; i++){
+    console.log(i)
+}
