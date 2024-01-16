@@ -159,3 +159,16 @@ for (let i = 0; i < 6; i++) {
 }
 console.log("Random ID:", randomId);
 
+
+
+// LEVEL 2
+
+// Develop a small script which generate any number of characters random id:
+let numberOfCharacters = 8;
+let anotherRandomId = "";
+let character = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+for (let i = 0; i < numberOfCharacters; i++) {
+    var randomIndex = Math.floor(Math.random() * characters.length);
+    anotherRandomId += characters.charAt(randomIndex);
+}
+console.log("Random ID:", anotherRandomId);
