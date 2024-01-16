@@ -172,3 +172,23 @@ for (let i = 0; i < numberOfCharacters; i++) {
     anotherRandomId += characters.charAt(randomIndex);
 }
 console.log("Random ID:", anotherRandomId);
+
+
+// Use the countries array to create the following array of arrays:
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+  ]
+
+  for(let i = 0; i < countries.length; i++){
+    console.log(countries[i].toUpperCase())
+  }
