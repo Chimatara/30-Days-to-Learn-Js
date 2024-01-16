@@ -127,8 +127,18 @@ for(let i = 0; i <= 100; i++){
 // 10. Use for loop to iterate from 0 to 100 and print the sum of all numbers
 let sum = 0
 for(let i = 0; i <= 100; i++){
-  sum = sum + i
-  console.log(`The sum of the loop is ${sum}`)
+  sum += i
 }
+console.log(`The sum of the loop is ${sum}`)
+
+
+// Develop a small script which generate array of 5 random numbers
+let randomNumbers = [];
+for (let i = 0; i < 5; i++) {
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    randomNumbers.push(randomNumber);
+}
+console.log("Randon Numbers:", randomNumbers);
+
 
 
