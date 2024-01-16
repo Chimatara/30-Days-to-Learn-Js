@@ -192,3 +192,12 @@ const countries = [
   for(let i = 0; i < countries.length; i++){
     console.log(countries[i].toUpperCase())
   }
+
+
+//   Using the above countries array, create an array for countries length'
+// [7, 7, 6, 7, 8, 7, 7, 7, 7, 5, 5]
+let newArray = []
+for(let i = 0; i < countries.length; i++){
+    console.log(countries[i].length)
+    // will come back to this
+  }
