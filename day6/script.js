@@ -140,5 +140,14 @@ for (let i = 0; i < 5; i++) {
 }
 console.log("Randon Numbers:", randomNumbers);
 
+// Develop a small script which generate array of 5 random numbers and the numbers must be unique
+let uniqueRandomNumbers = [];
+for (let i = 0; i < 5; i++) {
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
+    uniqueRandomNumbers.push(randomNumber);
+}
+console.log("Randon Numbers:", uniqueRandomNumbers);
+
+
 
 
