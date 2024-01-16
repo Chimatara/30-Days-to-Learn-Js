@@ -150,4 +150,12 @@ console.log("Randon Numbers:", uniqueRandomNumbers);
 
 
 
+// Develop a small script which generate a six characters random id
+let randomId = "";
+let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+for (let i = 0; i < 6; i++) {
+    var randomIndex = Math.floor(Math.random() * characters.length);
+    randomId += characters.charAt(randomIndex);
+}
+console.log("Random ID:", randomId);
 
