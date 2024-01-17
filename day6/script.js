@@ -239,3 +239,8 @@ let countriesWithIA = []
 console.log('the countries with land are ' + countriesWithIA)
 
 
+// Using the above countries array, find the country containing the biggest number of characters
+countries.sort()
+countries.forEach(country => {
+console.log()
+})
