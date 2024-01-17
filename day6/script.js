@@ -219,20 +219,23 @@ for(let i = 0; i < countries.length; i++){
     // will come back to this
   }
 
-//   n above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
+//   in above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
 let countriesWithLand = []
-// for(let i = 0; i < co   untries.length; i++)
-// if(countries.includes('land')){
-// console.log(countries[i])
-// } else{
-// console.log('i am')
-// }
 countries.forEach(country => {
 if(country.includes('land')){
 countriesWithLand.push(country)
- console.log('the countries with land are ' + countriesWithLand)
 }
-// else{
-// console.log(' No countries with land available')
-// }
 })
+console.log('the countries with land are ' + countriesWithLand)
+
+
+// In above countries array, check if there is a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia
+let countriesWithIA = []
+   countries.forEach(country => {
+    if(country.includes('ia')){
+    countriesWithIA.push(country)
+}
+})
+console.log('the countries with land are ' + countriesWithIA)
+
+
