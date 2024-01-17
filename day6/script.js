@@ -229,7 +229,7 @@ let countriesWithLand = []
 // }
 countries.forEach(country => {
 if(country.includes('land')){
-let countriesWithLandArray = countriesWithLand.push(country)
+countriesWithLand.push(country)
  console.log('the countries with land are ' + countriesWithLand)
 }
 // else{
