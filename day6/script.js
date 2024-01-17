@@ -131,6 +131,22 @@ for(let i = 0; i <= 100; i++){
 }
 console.log(`The sum of the loop is ${sum}`)
 
+// Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
+let sumOfEvenNum = 0
+let sumOfOddNum = 0
+for(let i = 0; i <= 100; i++){
+    if(i % 2 == 0){
+        sumOfEvenNum += i
+    }
+  }
+  console.log('sum of even numbers is' + ' ' + sumOfEvenNum)
+
+for(let i = 0; i <= 100; i++){
+    if(i % 3 == 0 || i % 5 === 0){
+        sumOfOddNum += i
+    }
+  }
+  console.log('sum of odd numbers is' + ' ' + sumOfOddNum)
 
 // Develop a small script which generate array of 5 random numbers
 let randomNumbers = [];
@@ -198,6 +214,25 @@ const countries = [
 // [7, 7, 6, 7, 8, 7, 7, 7, 7, 5, 5]
 let newArray = []
 for(let i = 0; i < countries.length; i++){
-    console.log(countries[i].length)
+    newArray = countries[i].length
+    console.log(newArray)
     // will come back to this
   }
+
+//   n above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
+let countriesWithLand = []
+// for(let i = 0; i < co   untries.length; i++)
+// if(countries.includes('land')){
+// console.log(countries[i])
+// } else{
+// console.log('i am')
+// }
+countries.forEach(country => {
+if(country.includes('land')){
+let countriesWithLandArray = countriesWithLand.push(country)
+ console.log('the countries with land are ' + countriesWithLand)
+}
+// else{
+// console.log(' No countries with land available')
+// }
+})
