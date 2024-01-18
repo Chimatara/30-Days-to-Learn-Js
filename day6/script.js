@@ -315,3 +315,14 @@ for(let i = fruits.length - 1; i >= 0; i--){
 reversedFruits.push(fruits[i])
 }
 console.log(reversedFruits)
+
+
+// Print all the elements of array as shown below
+const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
+  ]
+  for(let stack of fullStack){
+    let stack = fullStack.join()
+    console.log(stack)
+  }
