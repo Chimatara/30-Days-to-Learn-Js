@@ -299,3 +299,19 @@ for (let i = 0; i < mernStack.length; i++) {
   mernAcronym += mernStack[i].charAt(0);
 }
 console.log('MERN Acronym:', mernAcronym);
+
+
+// Iterate through the array, ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"] using a for loop or for of loop and print out the items
+const tracks =  ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+for(let track of tracks){
+console.log(track)
+}
+
+
+// This is a fruit array , ['banana', 'orange', 'mango', 'lemon'] reverse the order using loop without using a reverse method
+let reversedFruits = []
+const fruits =['banana', 'orange', 'mango', 'lemon']
+for(let i = fruits.length - 1; i >= 0; i--){
+reversedFruits.push(fruits[i])
+}
+console.log(reversedFruits)
