@@ -248,3 +248,41 @@ if(countries[i].length > maxLength){
 }
 }
 console.log(maxLength, countryWithMaxLength)
+
+
+// Using the above countries array, find the country containing only 5 characters.
+let countryWith5Characters = []
+for(let country of countries){
+    if(country.length === 5){
+        countryWith5Characters.push(country)
+    }
+}
+console.log(countryWith5Characters)
+
+
+// Find the longest word in the webTechs array
+let result = []
+let longestWord = ''
+let techStack = 0
+const webTechs = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB'
+  ]
+
+  for(let stack of webTechs){
+    if(stack.length > techStack){
+      techStack = stack.length
+      longestWord = stack
+      result.push(longestWord)
+    }
+  }
+  console.log(result)
+
+
+//   Use the webTechs array to create the following array of arrays
+// [["HTML", 4], ["CSS", 3],["JavaScript", 10],["React", 5],["Redux", 5],["Node", 4],["MongoDB", 7]]
