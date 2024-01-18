@@ -214,10 +214,9 @@ const countries = [
 // [7, 7, 6, 7, 8, 7, 7, 7, 7, 5, 5]
 let newArray = []
 for(let i = 0; i < countries.length; i++){
-    newArray = countries[i].length
-    console.log(newArray)
-    // will come back to this
+    newArray.push(countries[i].length)
   }
+  console.log(newArray)
 
 //   in above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
 let countriesWithLand = []
