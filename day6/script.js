@@ -225,7 +225,7 @@ if(country.includes('land')){
 countriesWithLand.push(country)
 }
 })
-console.log('the countries with land are ' + countriesWithLand)
+console.log(countriesWithLand)
 
 
 // In above countries array, check if there is a country or countries end with a substring 'ia'. If there are countries end with, print it as array. If there is no country containing the word 'ai', print 'These are countries ends without ia
@@ -235,11 +235,16 @@ let countriesWithIA = []
     countriesWithIA.push(country)
 }
 })
-console.log('the countries with land are ' + countriesWithIA)
+console.log(countriesWithIA)
 
 
 // Using the above countries array, find the country containing the biggest number of characters
-countries.sort()
-countries.forEach(country => {
-console.log()
-})
+let maxLength = 0
+let countryWithMaxLength = ''
+for(let i = 0; i < countries.length; i++){
+if(countries[i].length > maxLength){
+    maxLength = countries[i].length;
+    countryWithMaxLength = countries[i]
+}
+}
+console.log(maxLength, countryWithMaxLength)
