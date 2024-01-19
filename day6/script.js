@@ -345,3 +345,37 @@ console.log(copyCountriesArray)
 // Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
 let sortedCountries = copyCountriesArray.sort()
 console.log(sortedCountries)
+
+
+// Sort the webTechs array and mernStack array
+
+// using for loop
+for(let i = 0; i < webTechs.length - 1; i++){
+    for(let j = 0; j < webTechs.length - 1 - i; j++){
+        if(webTechs[j] > webTechs[j +1]){
+            let sort = webTechs[j]
+            webTechs[j] = webTechs[j + 1]
+            webTechs[j + 1] = sort
+        }
+    }
+}
+console.log(webTechs)
+
+for(let i = 0; i < mernStack.length - 1; i++){
+    for(let j = 0; j < mernStack.length - 1 - i; j++){
+        if(mernStack[j] > mernStack[j +1]){
+            let sort = mernStack[j]
+            mernStack[j] = mernStack[j + 1]
+           mernStack[j + 1] = sort
+        }
+    }
+}
+console.log(mernStack)
+
+
+// Reverse the countries array and capitalize each country and stored it as an array
+let reverseCountries = []
+for(let i = countries.length; i >= 0; i++){
+    reverseCountries.push(countries[i])
+}
+console.log(reverseCountries)
