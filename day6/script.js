@@ -326,3 +326,22 @@ const fullStack = [
     let stack = fullStack.join()
     console.log(stack)
   }
+
+
+
+//   LEVEL 3
+
+// 1. Copy countries array(Avoid mutation)
+let countriesCopy = countries.slice()
+console.log(countriesCopy)
+
+// using a forloop
+let copyCountriesArray = []
+for (let index = 0; index < countries.length; index++) {
+    copyCountriesArray.push(countries[index])
+}
+console.log(copyCountriesArray)
+
+// Arrays are mutable. Create a copy of array which does not modify the original. Sort the copied array and store in a variable sortedCountries
+let sortedCountries = copyCountriesArray.sort()
+console.log(sortedCountries)
