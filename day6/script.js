@@ -375,7 +375,8 @@ console.log(mernStack)
 
 // Reverse the countries array and capitalize each country and stored it as an array
 let reverseCountries = []
-for(let i = countries.length; i >= 0; i++){
+for(let i = countries.length - 1; i >= 0; i--){
     reverseCountries.push(countries[i])
 }
-console.log(reverseCountries)
+let capitalize = reverseCountries.toUpperCase()
+console.log(capitalize)
