@@ -118,12 +118,29 @@ for(let i = 0; i <= 100; i++){
 
 // 8. Use for loop to iterate from 0 to 100 and print only odd numbers
 for(let i = 0; i <= 100; i++){
-    if(i % 3 === 0 || i % 5 === 0){
+    if(i % 2 !== 0){
         console.log(`The odd numbers are ${i}`) //check back
     }
 }
 
 // 9. Use for loop to iterate from 0 to 100 and print only prime numbers
+for (let i = 2; i <= 100; i++) {
+    let isPrime = true;
+  
+    for (let j = 2; j < i; j++) {
+      if (i % j === 0) {
+        isPrime = false;
+        break;
+      }
+    }
+  
+    if (isPrime) {
+      console.log(i);
+    }
+  }
+  
+
+
 // 10. Use for loop to iterate from 0 to 100 and print the sum of all numbers
 let sum = 0
 for(let i = 0; i <= 100; i++){
@@ -134,6 +151,7 @@ console.log(`The sum of the loop is ${sum}`)
 // Use for loop to iterate from 0 to 100 and print the sum of all evens and the sum of all odds.
 let sumOfEvenNum = 0
 let sumOfOddNum = 0
+let sumOfEvenAndOddNums = []
 for(let i = 0; i <= 100; i++){
     if(i % 2 == 0){
         sumOfEvenNum += i
@@ -142,11 +160,14 @@ for(let i = 0; i <= 100; i++){
   console.log('sum of even numbers is' + ' ' + sumOfEvenNum)
 
 for(let i = 0; i <= 100; i++){
-    if(i % 3 == 0 || i % 5 === 0){
+    if(i % 2 !== 0){
         sumOfOddNum += i
     }
   }
+  sumOfEvenAndOddNums.push(sumOfEvenNum, sumOfOddNum)
   console.log('sum of odd numbers is' + ' ' + sumOfOddNum)
+  console.log(sumOfEvenAndOddNums)
+
 
 // Develop a small script which generate array of 5 random numbers
 let randomNumbers = [];
@@ -376,7 +397,8 @@ console.log(mernStack)
 // Reverse the countries array and capitalize each country and stored it as an array
 let reverseCountries = []
 for(let i = countries.length - 1; i >= 0; i--){
-    reverseCountries.push(countries[i])
+    reverseCountries.push(countries[i].toUpperCase())
 }
-let capitalize = reverseCountries.toUpperCase()
-console.log(capitalize)
+console.log(reverseCountries)
+
+
