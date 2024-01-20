@@ -372,7 +372,7 @@ console.log(sortedCountries)
 // using for loop
 for(let i = 0; i < webTechs.length - 1; i++){
     for(let j = 0; j < webTechs.length - 1 - i; j++){
-        if(webTechs[j] > webTechs[j +1]){
+        if(webTechs[j] > webTechs[j + 1]){
             let sort = webTechs[j]
             webTechs[j] = webTechs[j + 1]
             webTechs[j + 1] = sort
