@@ -268,7 +268,7 @@ if(countries[i].length > maxLength){
     countryWithMaxLength = countries[i]
 }
 }
-console.log(maxLength, countryWithMaxLength)
+console.log(countryWithMaxLength)
 
 
 // Using the above countries array, find the country containing only 5 characters.
@@ -295,14 +295,13 @@ const webTechs = [
     'MongoDB'
   ]
 
-  for(let stack of webTechs){
-    if(stack.length > techStack){
-      techStack = stack.length
-      longestWord = stack
-      result.push(longestWord)
+for(let i = 0; i < webTechs.length; i++){
+    if(webTechs[i].length > techStack){
+        techStack = webTechs[i].length;
+        longestWord = webTechs[i]
     }
-  }
-  console.log(result)
+}
+  console.log(longestWord)
 
 
 //   Use the webTechs array to create the following array of arrays
