@@ -150,3 +150,75 @@ function findMax(num1, num2, num3){
     
 }
 console.log(findMax(12, 3, 6))
+
+
+
+// LEVEL 2
+// Linear equation is calculated as follows: ax + by + c = 0. Write a function which calculates value of a linear equation, solveLinEquation
+function solveLinEquation(a, b, c, x, y) {
+    return a * x + b * y + c;
+}
+const a = 5;
+const b = -3;
+const c = 5;
+const x = 1;
+const y = 2;
+
+const result = solveLinEquation(a, b, c, x, y);
+console.log(result)
+
+
+
+// Quadratic equation is calculated as follows: ax2 + bx + c = 0. Write a function which calculates value or values of a quadratic equation, solveQuadEquation
+// COPIED
+// function solveQuadEquation(a, b, c) {
+    // Calculate the discriminant
+//     const discriminant = b ** 2 - 4 * a * c;
+
+//     // Check if the discriminant is negative (no real roots)
+//     if (discriminant < 0) {
+//         return "No real roots";
+//     }
+
+//     // Calculate the two possible roots
+//     const root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+//     const root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+
+//     // Return the roots
+//     return [root1, root2];
+// }
+
+// // Example usage:
+// const a = 2;
+// const b = -7;
+// const c = 3;
+
+// const roots = solveQuadEquation(a, b, c);
+// console.log(`The roots of the quadratic equation are: ${roots}`);
+
+// Declare a function name printArray. It takes array as a parameter and it prints out each value of the array
+function printArray(arr){
+for(let i = 0; i < arr.length; i++)
+console.log(arr[i])
+}
+printArray([2, 4, 6, 8])
+
+
+// Write a function name showDateTime which shows time in this format: 08/01/2020 04:08 using the Date object
+function showDateTime() {
+    const currentDate = new Date();
+
+    const year = currentDate.getFullYear();
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+    const day = String(currentDate.getDate()).padStart(2, '0');
+    const hours = String(currentDate.getHours()).padStart(2, '0');
+    const minutes = String(currentDate.getMinutes()).padStart(2, '0');
+
+    const formattedDateTime = `${day}/${month}/${year} ${hours}:${minutes}`;
+    
+    console.log(formattedDateTime);
+}
+showDateTime();
+
+
+// 
