@@ -99,20 +99,28 @@ console.log(convertCelsiusToFahrenheit(50))
 
 // Body mass index(BMI) is calculated as follows: bmi = weight in Kg / (height x height) in m2. Write a function which calculates bmi. BMI is used to broadly define different weight groups in adults 20 years old or older.Check if a person is underweight, normal, overweight or obese based the information given below.
 function bmi(w, h){
-    let bmi = w / (h ** 2) + 'kg/m2'
-    if(bmi < 18.5) console.log('Underweight')
-    else if(bmi >= 18.5 || bmi <= 24.9) console.log('Normalweight')
-    else if(bmi >= 25 || bmi <=29.9) console.log('Overweight')
-    else if(bmi === 30)  console.log('You are obese')
-    else console.log('invalid bmi')
-    return bmi;
+    const heightInMeters = h / 100
+    const bmi = w / (heightInMeters * heightInMeters) + 'kg/m2'
+    if(bmi < 18.5) {
+        return 'Underweight'
+    }
+    else if(bmi >= 18.5 && bmi <= 24.9) 
+    {
+        return 'Normalweight'
+    }
+    else if(bmi >= 25 && bmi <=29.9){
+        return 'Overweight'
+    }
+    else{
+        return 'obese'
+    }
 }
-console.log(bmi(300, 4))
-// come back to this
+console.log(bmi(50, 175))
+
 
 
 // Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
 function checkSeason(month){
      
-   const season = 
+//    const season = 
 }
