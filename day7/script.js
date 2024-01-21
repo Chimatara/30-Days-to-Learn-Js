@@ -120,7 +120,33 @@ console.log(bmi(50, 175))
 
 
 // Write a function called checkSeason, it takes a month parameter and returns the season:Autumn, Winter, Spring or Summer.
-function checkSeason(month){
-     
-//    const season = 
+function checkSeason(month) {
+    const months = month.toLowerCase();
+
+    if (["january", "february", "december"].includes(months)) {
+        return "Winter";
+    } else if (["march", "april", "may"].includes(months)) {
+        return "Spring";
+    } else if (["june", "july", "august"].includes(months)) {
+        return "Summer";
+    } else if (["september", "october", "november"].includes(months)) {
+        return "Autumn";
+    } else {
+        return "Invalid month";
+    }
 }
+console.log(checkSeason('April'))
+
+
+// Math.max returns its largest argument. Write a function findMax that takes three arguments and returns their maximum with out using Math.max method.
+function findMax(num1, num2, num3){
+    if (num1 >= num2 && num1 >= num3) {
+        return num1;
+    } else if (num2 >= num1 && num2 >= num3) {
+        return num2;
+    } else {
+        return num3;
+    }
+    
+}
+console.log(findMax(12, 3, 6))
