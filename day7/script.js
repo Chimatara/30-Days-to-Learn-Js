@@ -233,11 +233,27 @@ let myArray = ['orange', 'banana', 'pear', 'kiwi']
 console.log(capitalizeArray(myArray))
 
 // Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
-function addItem(item){
-    
+function addItem(item, itemArray){
+    itemArray = itemArray || []
+    itemArray.push(item)
+    return itemArray;
 }
+let myItem = ['Bett', 'shrank', 'Sthul']
+let addition = 'Tish'
+console.log(addItem(addition, myItem))
 
 // Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+function removeItem(index, removeItemAtIndex){
+     removeItemAtIndex =  removeItemAtIndex || []
+    for(let i = 0; i < index.length; i++){
+      removeItemAtIndex.pop(index[i])
+    }
+    return removeItemAtIndex;
+}
+let t = ['q', 'b', 'c']
+let myIndex = 1
+console.log(removeItem(myIndex, t))
+// will come back to this
 
 // Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
 
