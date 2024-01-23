@@ -221,4 +221,42 @@ function showDateTime() {
 showDateTime();
 
 
-// 
+// Declare a function name capitalizeArray. It takes array as a parameter and it returns the - capitalizedarray
+function capitalizeArray(arr){
+    let capitalizedarray = []
+    for(let i = 0; i < arr.length; i++){
+        capitalizedarray.push(arr[i].toUpperCase())
+    }
+    return capitalizedarray;
+}
+let myArray = ['orange', 'banana', 'pear', 'kiwi']
+console.log(capitalizeArray(myArray))
+
+// Declare a function name addItem. It takes an item parameter and it returns an array after adding the item
+function addItem(item){
+    
+}
+
+// Declare a function name removeItem. It takes an index parameter and it returns an array after removing an item
+
+// Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
+
+// Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
+
+// Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
+
+// Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+// evensAndOdds(100);
+// The number of odds are 50.
+// The number of evens are 51.
+
+// Writ a function which generates a randomUserIp.
+
+// Write a function which generates a randomMacAddress
+
+// Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
+// console.log(randomHexaNumberGenerator());
+// '#ee33df'
+// Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
+// console.log(userIdGenerator());
+// 41XTDbE
