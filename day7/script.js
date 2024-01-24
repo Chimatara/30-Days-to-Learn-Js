@@ -269,7 +269,7 @@ console.log(sumOfNumbers(5))
 function sumOfOdds(number) {
     let sum = 0;
   
-    for (let i = number; i >= 0; i--) {
+    for (let i = 1; i <= number; i++) {
       if (i % 2 !== 0) {
         sum += i;
       }
@@ -277,16 +277,43 @@ function sumOfOdds(number) {
   
     return sum;
   }
-  
-  // Example usage:
   const myresult = sumOfOdds(7);
-  console.log(result); // Output: 16 (1 + 3 + 5 + 7)
+  console.log(result); 
   
-// revisit
 
 // Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
+function sumOfEven(num){
+    let sum = 0;
+  
+    for (let i = 1; i <= num; i++) {
+      if (i % 2 == 0) {
+        sum += i;
+      }
+    }
+  
+    return sum; 
+}
+let evenSummation = sumOfEven(4)
+console.log(evenSummation)
 
 // Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+function evensAndOdds(integer){
+    let evenCount = 0;
+    let oddCount = 0
+    for(let i = 1; i <= integer; i++){
+      if(i % 2 == 0){
+        evenCount++
+      }else{
+        oddCount++
+      }
+    }
+    return {
+        even: evenCount,
+        odd: oddCount
+    }
+}
+console.log(evensAndOdds(11))
+
 // evensAndOdds(100);
 // The number of odds are 50.
 // The number of evens are 51.
