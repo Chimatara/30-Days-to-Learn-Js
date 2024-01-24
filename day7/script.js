@@ -258,24 +258,30 @@ console.log(removeItem(myIndex, t))
 // Declare a function name sumOfNumbers. It takes a number parameter and it adds all the numbers in that range.
 function sumOfNumbers(number){
     let sum = 0
-    for(let i = number; i >= 0; i--){
+    for(let i = 1; i <= number; i++){
      sum = sum + i
     }
     return sum;
 }
-console.log(sumOfNumbers(15))
+console.log(sumOfNumbers(5))
 
 // Declare a function name sumOfOdds. It takes a number parameter and it adds all the odd numbers in that - range.
-function sumOfOdds(number){
-    let sum = 0
-    for(let i = number; i >= 0; i--){
-     if(number % 2 !== 0){
-        console.log(number[i])
-     }
+function sumOfOdds(number) {
+    let sum = 0;
+  
+    for (let i = number; i >= 0; i--) {
+      if (i % 2 !== 0) {
+        sum += i;
+      }
     }
-    // return sum;
-}
-sumOfOdds()
+  
+    return sum;
+  }
+  
+  // Example usage:
+  const myresult = sumOfOdds(7);
+  console.log(result); // Output: 16 (1 + 3 + 5 + 7)
+  
 // revisit
 
 // Declare a function name sumOfEven. It takes a number parameter and it adds all the even numbers in that - range.
