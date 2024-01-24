@@ -297,6 +297,10 @@ let evenSummation = sumOfEven(4)
 console.log(evenSummation)
 
 // Declare a function name evensAndOdds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+
+// evensAndOdds(100);
+// The number of odds are 50.
+// The number of evens are 51.
 function evensAndOdds(integer){
     let evenCount = 0;
     let oddCount = 0
@@ -314,17 +318,4 @@ function evensAndOdds(integer){
 }
 console.log(evensAndOdds(11))
 
-// evensAndOdds(100);
-// The number of odds are 50.
-// The number of evens are 51.
 
-// Writ a function which generates a randomUserIp.
-
-// Write a function which generates a randomMacAddress
-
-// Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
-// console.log(randomHexaNumberGenerator());
-// '#ee33df'
-// Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
-// console.log(userIdGenerator());
-// 41XTDbE
