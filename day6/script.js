@@ -191,7 +191,7 @@ console.log("Randon Numbers:", uniqueRandomNumbers);
 let randomId = "";
 let characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 for (let i = 0; i < 6; i++) {
-    var randomIndex = Math.floor(Math.random() * characters.length);
+    let randomIndex = Math.floor(Math.random() * characters.length);
     randomId += characters.charAt(randomIndex);
 }
 console.log("Random ID:", randomId);
@@ -205,7 +205,7 @@ let numberOfCharacters = 8;
 let anotherRandomId = "";
 let character = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 for (let i = 0; i < numberOfCharacters; i++) {
-    var randomIndex = Math.floor(Math.random() * characters.length);
+    let randomIndex = Math.floor(Math.random() * characters.length);
     anotherRandomId += characters.charAt(randomIndex);
 }
 console.log("Random ID:", anotherRandomId);
