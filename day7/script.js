@@ -319,11 +319,6 @@ console.log(evensAndOdds(11))
 
 
 // Write a function which generates a randomUserIp.
-// let radomUserIp = '';
-// let character = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-// for(let i = 0; i < 6; i++){
-
-// }
 function generateRandomUserIp() {
     const octet1 = Math.floor(Math.random() * 256);
     const octet2 = Math.floor(Math.random() * 256);
@@ -338,7 +333,22 @@ function generateRandomUserIp() {
   
 
 // Write a function which generates a randomMacAddress
-
+function generateRandomMacAddress() {
+    const hexChars = '0123456789ABCDEF';
+    let macAddress = '';
+    for (let i = 0; i < 6; i++) {
+      const pair = Array.from({ length: 2 }, () => hexChars.charAt(Math.floor(Math.random() * hexChars.length))).join('');
+      macAddress += pair;
+      if (i < 5) {
+        macAddress += ':';
+      }
+    }
+  
+    return macAddress;
+  }
+  const randomMacAddress = generateRandomMacAddress();
+  console.log(randomMacAddress);
+  
 
 // Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
 // console.log(randomHexaNumberGenerator());
