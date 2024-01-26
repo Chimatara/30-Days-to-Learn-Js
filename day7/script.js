@@ -355,6 +355,28 @@ function generateRandomMacAddress() {
 // Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
 // console.log(randomHexaNumberGenerator());
 // '#ee33df'
+function randomHexaNumberGenerator() {
+    const randomNumber = Math.floor(Math.random() * 16777216);
+    const hexNumber = randomNumber.toString(16).toUpperCase();
+  
+    return hexNumber;
+  }
+  const randomHexNumber = randomHexaNumberGenerator();
+  console.log(randomHexNumber);
+  
 // Declare a function name userIdGenerator. When this function is called it generates seven character id. The function return the id.
 // console.log(userIdGenerator());
 // 41XTDbE
+function userIdGenerator() {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let userId = '';
+    for (let i = 0; i < 7; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      userId += characters.charAt(randomIndex);
+    }
+  
+    return userId;
+  }
+  const generatedUserId = userIdGenerator();
+  console.log(generatedUserId);
+  
