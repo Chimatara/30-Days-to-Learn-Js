@@ -337,7 +337,8 @@ function generateRandomMacAddress() {
     const hexChars = '0123456789ABCDEF';
     let macAddress = '';
     for (let i = 0; i < 6; i++) {
-      const pair = Array.from({ length: 2 }, () => hexChars.charAt(Math.floor(Math.random() * hexChars.length))).join('');
+      const pair = hexChars.charAt(Math.floor(Math.random() * hexChars.length)) +
+                   hexChars.charAt(Math.floor(Math.random() * hexChars.length));
       macAddress += pair;
       if (i < 5) {
         macAddress += ':';
@@ -348,6 +349,7 @@ function generateRandomMacAddress() {
   }
   const randomMacAddress = generateRandomMacAddress();
   console.log(randomMacAddress);
+  
   
 
 // Declare a function name randomHexaNumberGenerator. When this function is called it generates a random hexadecimal number. The function return the hexadecimal number.
